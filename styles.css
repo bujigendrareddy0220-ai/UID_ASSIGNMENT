@@ -312,6 +312,54 @@ footer {
     margin-bottom: 1rem;
 }
 
+.btn_1 {
+    display: inline-block;
+    background-color: var(--title);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.btn_2 {
+    display: inline-block;
+    background-color: var(--title);
+    color: #000;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.btn_3 {
+    display: inline-block;
+    background-color: var(--title);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.btn_4 {
+    display: inline-block;
+    background-color: var(--title);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    margin-top: 1.5rem;
+}
+
 .status {
     font-size: 0.9rem;
     color: #888;
