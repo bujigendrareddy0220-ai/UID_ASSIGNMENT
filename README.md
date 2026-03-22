@@ -53,3 +53,5 @@ Responsive Design: The layout has been designed to be responsive, ensuring it lo
 ------
 To run the Project
 Go to index.html file and run it. Then you will see my portfolio website. 
+
+Live Link of Portfolio: https://bujigendrareddy0220-ai.github.io/UID_ASSIGNMENT/
