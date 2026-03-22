@@ -93,18 +93,17 @@ footer {
     color: var(--accent);
 }
 
-/* CONTAINER */
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 5rem 2rem;
 }
 
-/* SECTION PADDING */
 .section {
     padding: 6rem 0;
     background-color: var(--bg);
 }
+
 /*WELCOME PAGE*/
 .welcome {
     min-height: 100vh;
@@ -142,10 +141,15 @@ footer {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    margin-left: 300px;
     transition: transform 0.3s ease;
+    margin-top: 1.5rem;
 }
-/* HOME HERO */
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* HOME PAGE */
 .home {
     min-height: 100vh;
     background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
@@ -398,7 +402,7 @@ footer {
     background-color: #1e1e1e;
     padding: 18px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 69, 0, 0.2);
+    box-shadow: 0 0 20px lightblue;
 }
 
 .form-group {
@@ -441,25 +445,142 @@ footer {
 .submit-btn:hover {
     background-color: olive;
 }
-/* RESPONSIVE */
+/* RESPONSIVE for Mobile Devices  */
+
 @media (max-width: 768px) {
-    .hero-content,
-    .about-grid,
-    .contact-grid {
+    .nav-container {
         flex-direction: column;
-        text-align: center;
+        padding: 1rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
     
     nav ul {
         flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+        background-color: #1a1a1a;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+    
+    nav a {
+        display: block;
+        padding: 0.5rem 0;
+    }
+    
+    .welcome, 
+    .home,
+    .contact-page{
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .wel-content,
+    .home-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+    
+    .wel-text,
+    .home-text {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .wel-text h1,
+    .home-text h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .home-image img,
+    .about-image img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .about-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .about-page h1,
+    .contact-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .edu-card {
+        flex-direction: column;
         gap: 1rem;
     }
-    
-    .nav-container {
-        flex-direction: column;
+
+    .projects-grid,
+    .skills-grid,
+    .cert-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
     
-    .hero-text h1 {
-        font-size: 3rem;
+    .projects-page h1,
+    .skills-page h1,
+    .certifications-page h1,
+    .contact-page h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+    
+    .contact-info p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    .contact-form {
+        background-color: #1e1e1e;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 69, 0, 0.2);
+    }
+    
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+    
+    .contact-form label {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .contact-form input,
+    .submit-btn {
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 2rem 1rem;
     }
 }
+
